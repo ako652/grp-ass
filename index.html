@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .btn {
+        border-radius: 0;
+      }
+      @media (min-width: 992px) {
+        .container-lg-fluid {
+          max-width: unset;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      .btn-strive {
+        color: blue;
+        background-color: greenyellow;
+      }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h2 class="text-center mt-5">
+      Example of container-lg becoming container on lg screens only
+    </h2>
+    <div class="container-lg px-0 px-lg-3">
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+    </div>
+
+    <h2 class="text-center">Example of container-fluid from lg</h2>
+    <div class="container container-lg-fluid">
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+    </div>
+
+    <h2 class="text-center">Example of normal container</h2>
+    <div class="container mb-5">
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+      <div class="row">
+        <div class="col">
+          Every button is made from different html element but look the same
+          thanks to bootstrap classes, remove the classes to see what happens.
+          <div>
+            <input type="button" class="btn btn-strive" value="Test button 1" />
+            <button class="btn btn-strive">Test button 2</button>
+            <a href="#" class="btn btn-strive">Test button 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-center mt-5">Carousel example</h2>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://source.unsplash.com/random/600x300/?q=O"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>This slide has some text</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://source.unsplash.com/random/600x300/?q=2"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://source.unsplash.com/random/600x300/?q=1"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <h2 class="text-center mt-5">Grid example working with cards</h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 mb-3">
+          <div class="card">
+            <img
+              src="http://placehold.it/200x200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-3">
+          <div class="card">
+            <img
+              src="http://placehold.it/200x200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-3">
+          <div class="card">
+            <img
+              src="http://placehold.it/200x200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-3">
+          <div class="card">
+            <img
+              src="http://placehold.it/200x200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-3"><div class="bg-success">1</div></div>
+        <div class="col-3"><div class="bg-success">2</div></div>
+        <div class="col-3"><div class="bg-success">3</div></div>
+        <div class="col-3"><div class="bg-success">4</div></div>
+        <div class="col-3"><div class="bg-success">5</div></div>
+        <div class="col-3"><div class="bg-success">6</div></div> -->
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row mx-n1 mb-5">
+        <div class="col-12"><h2>Title</h2></div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 px-1">
+          <div class="bg-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia hic
+            nesciunt id qui itaque voluptatibus dolores sapiente fugit nam
+            deleniti tempore unde laborum dolor consequuntur culpa,
+            reprehenderit dicta libero cum.
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-end justify-content-xl-between mb-5">
+        <div
+          class="
+            col-8 col-md-9 col-lg-6
+            mb-4 mb-sm-0
+            mt-sm-4 mt-md-0
+            order-sm-2
+          "
+        >
+          <h4>Click on the image to trigger the collapse element</h4>
+          <p class="text-muted">
+            <small
+              >I'm a subtitle and i'm displaying some more information</small
+            >
+          </p>
+
+          <div class="collapse show" id="collapseExample">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              voluptatum unde dicta architecto blanditiis at. Tempore provident
+              culpa quasi numquam sint hic, optio voluptatibus ipsa repellendus
+              eius assumenda illum fugiat?
+            </p>
+            <div class="row">
+              <div class="col-sm-6 col-md-3">
+                <div class="bg-info text-white mb-2 mb-md-0 px-3">1</div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="bg-info text-white mb-2 mb-md-0 px-3">2</div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="bg-info text-white mb-2 mb-md-0 px-3">3</div>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <div class="bg-info text-white mb-2 mb-md-0 px-3">4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-lg-6 order-sm-1 px-0 px-sm-3">
+          <img
+            src="https://source.unsplash.com/random"
+            class="img-fluid"
+            alt="test image"
+            data-toggle="collapse"
+            data-target="#collapseExample"
+          />
+        </div>
+      </div>
+    </div>
+    <h4 class="text-center">old input</h4>
+    <div class="w-50 mx-auto">
+      <label for="testInput">Text for input</label>
+      <input id="testInput" placeholder="TEST" />
+    </div>
+    <h4 class="text-center">bootstrap input</h4>
+    <div class="w-50 mx-auto">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+    <h2 class="text-center">Modal triggers</h2>
+    <div class="d-flex justify-content-center mb-5">
+      <button
+        type="button"
+        class="btn btn-success"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Save
+      </button>
+      <button
+        type="button"
+        class="btn btn-danger"
+        data-toggle="modal"
+        data-target="#exampleModal2"
+      >
+        Delete
+      </button>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Save action</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Do you want to save?</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-dismiss="modal"
+              onclick="saveSmth()"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Delete Action</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you really really sure you want to delete?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-dismiss="modal"
+              onclick="deleteSmth()"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function saveSmth() {
+        alert("look at the console");
+        console.log("Saved successfully");
+      }
+      function deleteSmth() {
+        alert("look at the console");
+        console.log("Something got deleted");
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
